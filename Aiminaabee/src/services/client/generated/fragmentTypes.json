@@ -1,0 +1,84 @@
+{
+    "__schema": {
+        "types": [
+            {
+                "kind": "UNION",
+                "name": "ConverItem",
+                "possibleTypes": [
+                    {
+                        "name": "ConverUserUser"
+                    },
+                    {
+                        "name": "ConverUserShop"
+                    },
+                    {
+                        "name": "ConverShopUser"
+                    }
+                ]
+            },
+            {
+                "kind": "UNION",
+                "name": "ExploreItem",
+                "possibleTypes": [
+                    {
+                        "name": "Product"
+                    },
+                    {
+                        "name": "Category"
+                    }
+                ]
+            },
+            {
+                "kind": "UNION",
+                "name": "FeedItem",
+                "possibleTypes": [
+                    {
+                        "name": "Product"
+                    },
+                    {
+                        "name": "Category"
+                    }
+                ]
+            },
+            {
+                "kind": "UNION",
+                "name": "ProductDetailItem",
+                "possibleTypes": [
+                    {
+                        "name": "Product"
+                    },
+                    {
+                        "name": "RelatedProduct"
+                    }
+                ]
+            },
+            {
+                "kind": "UNION",
+                "name": "UserNotiFeed",
+                "possibleTypes": [
+                    {
+                        "name": "Follow"
+                    },
+                    {
+                        "name": "ProductAdded"
+                    },
+                    {
+                        "name": "NewOrder"
+                    },
+                    {
+                        "name": "OrderShipped"
+                    },
+                    {
+                        "name": "OrderDelivered"
+                    },
+                    {
+                        "name": "OrderCancelled"
+                    },
+                    {
+                        "name": "ShopInvite"
+                    }
+                ]
+            }
+        ]
+    }
+}

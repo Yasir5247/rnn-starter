@@ -1,0 +1,58 @@
+extend type User {
+  formatedUserName: String
+}
+
+extend type Product {
+  formatedName: String
+  formatedPrice: Int
+  formatedTotalPrice: Int
+}
+
+extend type Shop {
+  formatedShopName: String
+  isMyShop: Boolean
+}
+
+extend type CartItem {
+  subTotal: Int
+}
+
+extend type ConverUserUser {
+  formattedLastMessage: String
+  formattedDate: Date
+}
+
+extend type ConverUserShop {
+  formattedLastMessage: String
+  formattedDate: Date
+}
+
+extend type ConverShopUser {
+  formattedLastMessage: String
+  formattedDate: Date
+}
+
+extend type ProductOrder {
+  subTotal: Int
+  totalTaxPrice: Int
+  totalPrice: Int
+}
+
+extend type ShopReview {
+  formattedData: Date
+  formattedBody: String
+}
+
+extend type OrderLog {
+  formattedDate: Date
+}
+
+type CartSummary {
+  subTotal: Int
+  totTaxPrice: Int
+  finalPrice: Int
+}
+
+extend type Query {
+  cartSummary: CartSummary!
+}

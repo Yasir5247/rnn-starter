@@ -1,0 +1,16 @@
+schema: schema.docs.graphql
+documents: 'src/**/*.tsx'
+generates:
+  ./src/generated/graphql.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+    config:
+      reactApolloVersion: 3
+      withHOC: false
+      withComponent: false
+      withHooks: true
+# npx apollo service:download --endpoint=http://localhost:8080/graphql graphql-schema.json
+# npx apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql
+# npx apollo codegen:generate --localSchemaFile=graphql-schema.json,local-schema.graphql --target=typescript --tagName=gql
